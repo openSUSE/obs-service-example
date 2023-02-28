@@ -4,13 +4,25 @@
 
 Each service contains at least 2 files:
 
-* A script file which will be executed (e.g. example)
+* A executable file which will be executed (e.g. example)
+  * An option `--outdir` is required
 * A xml service description (`<script_name>.service`)
 
 ## Test your xml file
 
+### XMLlint
+
+
 ```
-perl -MXML::Parser -e 'XML::Parser->new()->parsefile($ARGV[0])' example.service
+xmllint example.service
+```
+
+### Perl
+
+This script requires the package `perl-OBS-XML`
+
+```
+./check_xml.pl example.service
 ```
 
 
