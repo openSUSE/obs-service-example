@@ -1,0 +1,21 @@
+#!/bin/bash
+
+while [ -n "$1" ];do
+  case $1 in
+    --outdir) shift;OUTDIR=$1;shift;;
+    --param1) shift;PARAM1=$1;shift;;
+    --bool1)  shift;BOOL1=1;;
+  esac
+done
+
+if [ -z "$OUTDIR" ];then
+  echo "--outdir not set"
+  exit 1;
+fi
+
+echo "Running service example"
+echo "OUTDIR : $OUTDIR"
+echo "PARAM1 : $PARAM1"
+echo "BOOL1  : $BOOL1" 
+
+exit 0

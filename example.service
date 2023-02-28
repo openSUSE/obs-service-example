@@ -1,0 +1,16 @@
+<service name="example">
+  <summary>Example how to create a service</summary>
+  <description><![CDATA[
+  This service is just a simple example to document the requirements and development
+  hints for a service.
+  Don`t forget to set < and > in a CDATA block.
+  ]]>
+  </description>
+  <parameter name="param1">
+    <description>First parameter which takes an argument</description>
+  </parameter>
+  <parameter name="bool1">
+    <description>First boolean parameter</description>
+  </parameter>
+</service>
+
