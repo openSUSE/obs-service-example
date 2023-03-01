@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 #
-#
+# This script requires the package `perl-OBS-XML`
+
 use strict;
 use warnings;
 

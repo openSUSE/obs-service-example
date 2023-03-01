@@ -14,15 +14,7 @@ Each service contains at least 2 files:
 
 
 ```
-xmllint example.service
-```
-
-### Perl
-
-This script requires the package `perl-OBS-XML`
-
-```
-./check_xml.pl example.service
+xmllint --relaxng service.rng example.service
 ```
 
 
