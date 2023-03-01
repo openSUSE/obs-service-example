@@ -24,6 +24,8 @@ Summary:        Just an example service
 License:        GPL
 URL:            https://github.com/M0ses/obs-service-example
 Source:         %{name}-%{version}.tar.gz
+Group:          Development/Tools/Building
+
 
 %description
 This service is just an example to document the OBS service
