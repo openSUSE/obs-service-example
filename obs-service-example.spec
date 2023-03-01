@@ -20,8 +20,7 @@ Name:           obs-service-example
 Version:        0.0.1
 Release:        0
 Summary:        Just an example service
-# FIXME: Select a correct license from https://github.com/openSUSE/spec-cleaner#spdx-licenses
-License:        GPL
+License:        GPL-3.0-or-later
 URL:            https://github.com/M0ses/obs-service-example
 Source:         %{name}-%{version}.tar.gz
 Group:          Development/Tools/Building
