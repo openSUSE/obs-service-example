@@ -3,7 +3,7 @@
 ## Overview
 
 1. [Create a new service locally](#create_service)
-   1. [Required Files](#1.1-Required-Files)
+   1. [Required Files](#11-required-files)
    2. [Testing xml file](#test_xml_file)
    3. [Testing service via osc](#test_via_osc)
 2. [Prepare for OBS-Appliance](#prepare_obs_appliance)
