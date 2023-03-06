@@ -4,7 +4,7 @@
 
 1. [Create a new service locally](#1-create-a-new-service-locally)
    1. [Required Files](#11-required-files)
-   2. [Testing xml file](#test_xml_file)
+   2. [Testing xml file](#12-test-your-xml-file)
    3. [Testing service via osc](#test_via_osc)
 2. [Prepare for OBS-Appliance](#prepare_obs_appliance)
    1. [Create a new rpm package for your service](#create_testing_vm)
@@ -23,7 +23,7 @@
 All the osc commands can be done via the WebUI - 
 but using cli commands makes documentation so much easier ;-).
 
-Before you create a rpm package for your service you may want to branch the container,
+*TIP* Before you create a rpm package for your service you may want to branch the container,
 this create a repo named `home:<username>:branches:OBS:Server:Unstable` if it 
 not already exists.
 
@@ -45,7 +45,7 @@ Each service contains at least 2 files:
 * A xml service description (`<script_name>.service`)
 
 
-### <a name=test_xml_file>1.2 Test your xml file</a>
+### 1.2 Test your xml file
 
 
 ```
@@ -108,6 +108,9 @@ To get it into production systems please open an issue
 
 
 ## <a name=deployment_oo>4. Deployment on https://build.opensuse.org</a>
+
+You can't deploy service on [build.opensuse.org](https://build.opensuse.org) by yourself,
+but you can start a review process by doing the following:
 
 
 ### <a name=create_audit_bug>4.1 Create a audit bug in bugzilla.opensuse.org</a>
