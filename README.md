@@ -2,7 +2,7 @@
 
 ## Overview
 
-1. [Create a new service locally](#create_service)
+1. [Create a new service locally](#1-create-a-new-service-locally)
    1. [Required Files](#11-required-files)
    2. [Testing xml file](#test_xml_file)
    3. [Testing service via osc](#test_via_osc)
@@ -30,7 +30,7 @@ not already exists.
 In this OBS project you can easily create your new package (e.g. `obs-service-example`).
 
 
-## <a name=create_service>1. Create a new service locally</a>
+## 1. Create a new service locally
 
 You should create a new public git repository (preferable in https://github.com/openSUSE)
 
