@@ -1,24 +1,6 @@
 # Hitchhikers Guide to OBS services
 
-## Overview
-
-1. [Create a new service locally](#1-create-a-new-service-locally)
-   1. [Required Files](#11-required-files)
-   2. [Testing xml file](#12-test-your-xml-file)
-   3. [Testing service via osc](#test_via_osc)
-2. [Prepare for OBS-Appliance](#prepare_obs_appliance)
-   1. [Create a new rpm package for your service](#create_testing_vm)
-      1. [Kanku](#create_testing_vm_kanku)
-      2. [Other](#create_testing_vm_other)
-   2. [Test service in a obs-server Appliance](#)
-3. [Prepare service container](#prepare_service_container)
-   1. [Branch obs-source-service-podman](#branch_service_container)
-   2. [Add service](#add_service_to_container)
-   3. [Test your service running in the container](#test_service_container)
-4. [Deployment on https://build.opensuse.org](#deployment_oo)
-   1. [Create a audit bug in bugzilla.opensuse.org](#create_audit_bug)
-   2. [Create "Submit Request" to OBS:Server:Unstable](#create_sr)
-
+## Preamble
 
 All the osc commands can be done via the WebUI -
 but using cli commands makes documentation so much easier ;-).
@@ -96,7 +78,9 @@ You need to add a `<package name="obs-service-example"/>` entry to the kiwi file
 
 ### <a name=test_service_container>3.3 Test your service running in the container</a>
 
-FIXME: explain how to trigger service run
+* Create a new test package with a `_service` file containing your `example` service.
+* Commit it to your test OBS instance
+* Run `osc service rr` to trigger the service
 
 
 ### 3.4 Network access for containers
