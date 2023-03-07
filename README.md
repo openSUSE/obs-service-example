@@ -37,17 +37,17 @@ xmllint --relaxng service.rng example.service
 ```
 
 
-### <a name=test_via_osc>1.3 Test service via osc</a>
+### 1.3 Test service via osc
 
 If you create a test package including a `_service` to run this service, you can easily
 test while development.
 
 
-## <a name=prepare_obs_appliance>2. Prepare OBS-Appliance</a>
+## 2. Prepare OBS-Appliance
 
-### <a name=create_testing_vm>2.1 Create you own testing VM</a>
+### 2.1 Create you own testing VM
 
-#### <a name=create_testing_vm_kanku>2.1.1 Kanku</a>
+#### 2.1.1 Kanku
 
 ```
 git clone https://github.com/openSUSE/open-build-service/
@@ -56,27 +56,27 @@ kanku up
 ```
 
 
-#### <a name=create_testing_vm_other>2.1.2 Other virtualization solutions</a>
+#### 2.1.2 Other virtualization solutions
 
 Choose the image for your preferred virtualization solution at [openbuildservice.org](https://openbuildservice.org/download/other/)
 and create your own running OBS instance.
 
 
-## <a name=prepare_service_container>3. Prepare service container</a>
+## 3. Prepare service container
 
-### <a name=branch_service_container>3.1 Branch [obs-source-service-podman](https://build.opensuse.org/package/show/OBS:Server:Unstable/obs-source-service-podman)</a>
+### 3.1 Branch [obs-source-service-podman](https://build.opensuse.org/package/show/OBS:Server:Unstable/obs-source-service-podman)
 
 
 ```
 osc branch OBS:Server:Unstable/obs-source-service-podman
 ```
 
-### <a name=add_service_to_container>3.2 Add your service to the branched container</a>
+### 3.2 Add your service to the branched container
 
 You need to add a `<package name="obs-service-example"/>` entry to the kiwi file
 
 
-### <a name=test_service_container>3.3 Test your service running in the container</a>
+### 3.3 Test your service running in the container
 
 * Create a new test package with a `_service` file containing your `example` service.
 * Commit it to your test OBS instance
@@ -93,20 +93,20 @@ To get it into production systems please open an issue
 (containing a link to the bugzilla audit request) and a pull request in the [open-build-service github repository](https://github.com/openSUSE/open-build-service/)
 
 
-## <a name=deployment_oo>4. Deployment on https://build.opensuse.org</a>
+## 4. Deployment on https://build.opensuse.org
 
 You can't deploy service on [build.opensuse.org](https://build.opensuse.org) by yourself,
 but you can start a review process by doing the following:
 
 
-### <a name=create_audit_bug>4.1 Create a audit bug in bugzilla.opensuse.org</a>
+### 4.1 Create a audit bug in bugzilla.opensuse.org
 
 To run your service on https://build.opensuse.org a security audit has to be done
 by the SUSE security team. You can simply open an audit request on
 https://bugzilla.opensuse.org.
 
 
-### <a name=create_sr>4.2 Create "Submit Request" to OBS:Server:Unstable</a>
+### 4.2 Create "Submit Request" to OBS:Server:Unstable
 
 Once your audit bug gets closed (successfully) you can create a submit request
 for your new service package and the container to
