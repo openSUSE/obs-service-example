@@ -107,7 +107,5 @@ https://bugzilla.opensuse.org.
 
 
 ### 4.2 Create "Submit Request" to OBS:Server:Unstable
-
-Once your audit bug gets closed (successfully) you can create a submit request
-for your new service package and the container to
-[OBS:Server:Unstable](https://build.opensuse.org/project/show/OBS:Server:Unstable)
+<!-- markdown-link-check-disable-next-line -->
+Once your audit bug gets closed (successfully) you can create a submit request for your new service package and the container to [OBS:Server:Unstable](https://build.opensuse.org/project/show/OBS:Server:Unstable)
